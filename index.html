@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dieta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button id="back-button">&lt;</button>
+    <h1>Dieta</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Selecionados</h2>
+      <div id="selected-tags"></div>
+    </section>
+    <section>
+      <h2>Não Selecionados</h2>
+      <div id="unselected-tags"></div>
+    </section>
+  </main>
+  <footer>
+    <button id="add-button">+</button>
+  </footer>
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h3>Adicionar Item</h3>
+      <input type="text" id="new-item-name" placeholder="Nome do item">
+      <select id="new-item-category"></select>
+      <button id="confirm-add">Adicionar</button>
+      <button id="cancel-add">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

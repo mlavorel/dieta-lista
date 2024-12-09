@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+#selected-tags, #unselected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Itens selecionados: fundo colorido e texto branco. 
+   A cor real da categoria será aplicada inline no elemento. */
+.selected {
+  color: #fff;
+}
+
+/* Itens não selecionados: fundo branco, borda e texto coloridos.
+   Também aplicaremos a cor inline para bordas e texto. */
+.unselected {
+  background: #fff;
+  border: 1px solid;
+}
+
+/* Footer com botão de adicionar */
+footer {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+#add-button {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Modal */
+#modal.hidden {
+  display: none;
+}
+
+#modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal-content input, .modal-content select, .modal-content button {
+  font-size: 1rem;
+}
