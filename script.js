@@ -1,11 +1,11 @@
 // Configuração do Firebase - substituir pelas credenciais do seu projeto
 const firebaseConfig = {
-  apiKey: "SUA-CHAVE",
-  authDomain: "SEU-PROJETO.firebaseapp.com",
-  projectId: "SEU-PROJETO",
-  storageBucket: "SEU-PROJETO.appspot.com",
-  messagingSenderId: "NUMERO",
-  appId: "APP-ID"
+  apiKey: "AIzaSyCuG1DlIOCNDaLNw00y1R8oPJBFPEJU7vM",
+  authDomain: "dieta-lista.firebaseapp.com",
+  projectId: "dieta-lista",
+  storageBucket: "dieta-lista.firebasestorage.app",
+  messagingSenderId: "304695964539",
+  appId: "1:304695964539:web:bb4a1164134a1e1721c3de"
 };
 
 firebase.initializeApp(firebaseConfig);
